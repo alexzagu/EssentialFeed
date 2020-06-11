@@ -6,29 +6,8 @@
 //  Copyright © 2020 MWare. All rights reserved.
 //
 
+import EssentialFeed
 import XCTest
-
-class RemoteFeedLoader {
-
-    let url: URL
-    let client: HTTPClient
-
-    init(url: URL, client: HTTPClient) {
-        self.url = url
-        self.client = client
-    }
-
-    func load() {
-        self.client.get(from: self.url)
-    }
-
-}
-
-protocol HTTPClient {
-
-    func get(from url: URL)
-
-}
 
 class RemoteFeedLoaderTests: XCTestCase {
 
