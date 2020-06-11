@@ -30,13 +30,15 @@ public final class RemoteFeedLoader {
         self.client = client
     }
 
-    public func load(completion: @escaping (Error) -> Void) {
+    public typealias Result = Swift.Result<[FeedItem], Error>
+
+    public func load(completion: @escaping (Result) -> Void) {
         self.client.get(from: self.url) { result in
             switch result {
             case .success:
-                completion(.invalidData)
+                completion(.failure(.invalidData))
             case .failure:
-                completion(.connectivity)
+                completion(.failure(.connectivity))
             }
         }
     }
