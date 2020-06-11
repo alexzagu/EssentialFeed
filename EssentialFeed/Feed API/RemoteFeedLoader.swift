@@ -10,7 +10,8 @@ import Foundation
 
 public protocol HTTPClient {
 
-    func get(from url: URL, completion: @escaping (Error?, HTTPURLResponse?) -> Void)
+    typealias Result = Swift.Result<HTTPURLResponse, Error>
+    func get(from url: URL, completion: @escaping (Result) -> Void)
 
 }
 
@@ -30,10 +31,11 @@ public final class RemoteFeedLoader {
     }
 
     public func load(completion: @escaping (Error) -> Void) {
-        self.client.get(from: self.url) { error, response in
-            if response != nil {
+        self.client.get(from: self.url) { result in
+            switch result {
+            case .success:
                 completion(.invalidData)
-            } else {
+            case .failure:
                 completion(.connectivity)
             }
         }
