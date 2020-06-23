@@ -17,6 +17,7 @@
 		48B44227249959D300674BD0 /* FeedItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B44226249959D300674BD0 /* FeedItemsMapper.swift */; };
 		48B4422A249AC06500674BD0 /* URLSessionHTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B44229249AC06500674BD0 /* URLSessionHTTPClientTests.swift */; };
 		48B4422D249C1D0800674BD0 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B4422C249C1D0800674BD0 /* XCTestCase+MemoryLeakTracking.swift */; };
+		48B4422F24A2B7D400674BD0 /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B4422E24A2B7D400674BD0 /* URLSessionHTTPClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		48B44226249959D300674BD0 /* FeedItemsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemsMapper.swift; sourceTree = "<group>"; };
 		48B44229249AC06500674BD0 /* URLSessionHTTPClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClientTests.swift; sourceTree = "<group>"; };
 		48B4422C249C1D0800674BD0 /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
+		48B4422E24A2B7D400674BD0 /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				48B4422224921DD600674BD0 /* RemoteFeedLoader.swift */,
 				48B442242499592B00674BD0 /* HTTPClient.swift */,
 				48B44226249959D300674BD0 /* FeedItemsMapper.swift */,
+				48B4422E24A2B7D400674BD0 /* URLSessionHTTPClient.swift */,
 			);
 			path = "Feed API";
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 				48B4422324921DD600674BD0 /* RemoteFeedLoader.swift in Sources */,
 				48B442252499592B00674BD0 /* HTTPClient.swift in Sources */,
 				48B4421B249186E300674BD0 /* FeedItem.swift in Sources */,
+				48B4422F24A2B7D400674BD0 /* URLSessionHTTPClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
